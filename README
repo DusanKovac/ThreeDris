@@ -1,0 +1,42 @@
+Hello!
+
+In this assignment, it was implemented differently then how the previous assignment was done.
+After reading the OpenGL Redbook and learning about VBO's and VAO's I decided to implement that 
+system. 
+
+[NOTE]: All parts of this assignment was done, Counter is in the bottom left of the screen and will
+count down from 5 -> 0 and will set to R for restart option.
+
+
+
+For you I have the normal window where I implemented all parts of the assignment.
+[Do note]:
+	I removed 3 fruit scoring, to reduce the number of lines. Making it easier for me to
+	code.
+
+To run this project, please use make and then run ./FruitTetris3D!
+			[There are some warnings, which have no affect on the execution]
+
+In this zip there are 3 cpp and 3 header files that I have customly created, and a couple others required for shaders and angel.h/robotarm.
+
+
+fruit.cpp :
+
+Fruit is my main file where I run all the glut/gl functions and run the main game logic 
+
+
+tetrisblock.cpp/.h :
+
+This is where I made the falling tetris block, instead of making an
+object each time. It is initialised at the start and when adding the piece to 
+the board the game will run the initialiser right after. This class handles all 
+local translations of the piece and the drawing of it.
+
+board.cpp/.h :
+
+Here is the board class, this is the largest by far. It checks the validity of all moves by the piece.
+It adds the block to the stack and checks if its time to end the game.
+
+
+
+Thank you!
